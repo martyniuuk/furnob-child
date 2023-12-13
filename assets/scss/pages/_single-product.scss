@@ -1,0 +1,119 @@
+.single-product {
+  &__shipping-info-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__shipping-info {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+
+  &__shipping-info-delivery-text {
+    font-weight: 500;
+    color: #5e5e5e;
+  }
+
+  &__pay-once {
+    font-weight: 400;
+    color: $gray-100;
+  }
+
+  &__contact-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  &__contact-link {
+    a {
+      color: $black;
+      border-radius: 5px;
+      border: 1px solid #dddddd;
+      padding: 12px 24px;
+
+      &:hover {
+        background-color: #dddddd;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
+  }
+
+  &__pl-wood {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #c5d1bf;
+    border-radius: 10px;
+    padding: 9px 18px;
+    max-width: 30rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__pl-wood-icon {
+    font-size: 2rem;
+    color: #5c6358;
+  }
+
+  &__pl-wood-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+
+  &__pl-wood-description {
+    font-size: 0.9rem;
+    margin-bottom: 0rem;
+    line-height: 1.2;
+  }
+
+  &__pattern-book-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    color: #232323;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 12px 24px;
+
+    &:hover {
+      color: #5e5e5e;
+      background-color: #dddddd;
+    }
+  }
+
+  &__tab-heading {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1.125rem;
+  }
+
+  .woocommerce-Tabs-panel {
+    h2 {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.woocommerce-Price-amount {
+  color: $black;
+  font-weight: 600;
+}
+
+.single-details .single_add_to_cart_button {
+  border-radius: 50px;
+}
+
+.woocommerce-product-details {
+  &__short-description {
+    color: $black !important;
+  }
+}

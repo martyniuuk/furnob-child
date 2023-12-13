@@ -1,0 +1,9 @@
+.tinv-wishlist {
+  .tinvwl_add_to_wishlist_button.tinvwl-icon-heart.no-txt:before {
+    margin-top: 0;
+    margin-left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

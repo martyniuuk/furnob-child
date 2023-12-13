@@ -1,0 +1,17 @@
+.owl-carousel {
+  .owl-stage {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .owl-item {
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

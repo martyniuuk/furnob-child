@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+#comfino-body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  counter-reset: benefit;
+}
+
+.comfino-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.comfino-header {
+  padding: 0 0 50px;
+}
+
+.comfino-header-logo img {
+  width: 170px;
+  height: auto;
+}
+
+.comfino-header-title {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+  line-height: 40px;
+  padding: 15px 0;
+  background-color: #599e33;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.comfino-header-title span {
+  font-weight: 400;
+}
+
+.comfino-icons {
+  padding: 20px 0 50px;
+}
+
+.comfino-icons__title {
+  font-size: 22.5px;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px 0 50px;
+}
+
+.comfino-icons-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.comfino-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.comfino-icon-img {
+  width: 143px;
+  height: 143px;
+  border-radius: 50%;
+  background-color: #599e33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comfino-icon-text {
+  font-size: 21px;
+  max-width: 93%;
+  text-align: center;
+  font-weight: 400;
+}
+
+.comfino-icon-text span {
+  font-weight: 500;
+  color: #000;
+}
+
+.logotypes {
+  background-color: #ebebeb;
+  border-radius: 40px;
+}
+.logotypes-title {
+  text-align: center;
+  font-weight: 500;
+  padding-top: 20px;
+  font-size: 22.5px;
+}
+.logotypes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  gap: 40px;
+}
+.single-logotype {
+  height: auto;
+}
+
+.comfino-benefits-title {
+  font-size: 23.5px;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 0 20px;
+}
+.comfino-benefits-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.comfino-benefits-box__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin: 40px 0;
+}
+
+.comfino-benefits-box__item p {
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.comfino-benefits-box__item-img {
+  position: relative;
+}
+
+.comfino-benefits-box__item-img::after {
+  position: absolute;
+  counter-increment: benefit;
+  content: counter(benefit);
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #599e33;
+}
+
+/*SECTION PROFITS*/
+.comfino-profits {
+  background-color: #ebebeb;
+  border-radius: 40px;
+  padding: 30px 0;
+}
+.comfino-profits__title {
+  /*text-align: center;*/
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: 500;
+  padding-left: 60px;
+}
+
+.comfino-profits-description {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.comfino-profits-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.comfino-profits-content__text-list-item {
+  position: relative;
+  font-size: 20px;
+  list-style: none;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.comfino-profits-content__text-list-item span {
+  font-weight: 500;
+}
+
+.comfino-profits-content__text-list-item::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-image: url("assets/list-checkmark.png");
+  background-size: cover;
+}
+
+.comfino-profits-content__image {
+  min-width: 30%;
+  padding-right: 40px;
+  border-radius: 50%;
+}
+
+/*FOOTER*/
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 30px;
+  gap: 10px;
+}
+/**/
+
+/*STYLE MOBILE*/
+
+@media only screen and (max-width: 766px) {
+  /*HEADER*/
+  .comfino-header-logo img {
+    width: 160px;
+    height: auto;
+    padding-left: 40px;
+  }
+  .comfino-header-title {
+    margin: 20px;
+    font-size: 19px;
+  }
+  /*ICONS SECTION*/
+  .comfino-icon {
+    flex: unset;
+    width: 50%;
+  }
+  .comfino-icon-img {
+    width: 120px;
+    height: 120px;
+  }
+  .comfino-icon-text {
+    font-size: 19px;
+    max-width: 90%;
+  }
+
+  .comfino-benefits-box__item {
+    width: 50%;
+  }
+
+  .comfino-info-description {
+    font-size: 20px;
+  }
+  .comfino-info-content {
+    max-width: 90%;
+  }
+  .comfino-info-content__item-text {
+    width: 58%;
+    margin-left: 0;
+    font-size: 15px;
+    text-align: center;
+  }
+  .comfino-info-content__item-img {
+    margin: 0 auto;
+  }
+  /*SECTION PROFITS*/
+  .comfino-profits-description {
+    font-size: 24px;
+  }
+  .comfino-profits-content {
+    flex-direction: column;
+  }
+  .comfino-profits-content__image {
+    min-width: 30%;
+    padding-right: 0;
+  }
+  .single-logotype {
+    width: 107px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  .comfino-header-logo img {
+    width: 260px;
+    height: auto;
+    padding-left: 40px;
+  }
+  .comfino-header-title {
+    margin-top: 40px;
+  }
+  .comfino-info-content {
+    max-width: 74%;
+  }
+}

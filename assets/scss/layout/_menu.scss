@@ -1,0 +1,21 @@
+.site-nav {
+  &.large .sub-menu li a {
+    padding: 2px 16px;
+  }
+
+  .mega-menu {
+    .sub-menu {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      max-height: 600px;
+    }
+  }
+
+  .mega-menu.rooms-menu {
+    .sub-menu {
+      max-height: 400px;
+    }
+  }
+}

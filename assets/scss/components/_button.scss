@@ -1,0 +1,11 @@
+.btn {
+  border-radius: 50px !important;
+  height: fit-content !important;
+  width: fit-content;
+  padding: 10px 45px !important;
+
+  &--black {
+    background-color: $black;
+    color: $white;
+  }
+}

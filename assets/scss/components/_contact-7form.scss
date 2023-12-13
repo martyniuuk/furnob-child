@@ -1,0 +1,17 @@
+form {
+  &.submitting {
+    .wpcf7-spinner {
+      visibility: unset;
+      display: block;
+    }
+  }
+  .wpcf7-spinner {
+    visibility: unset;
+    display: none;
+    margin: 5px 0;
+  }
+
+  .wpcf7-not-valid-tip {
+    margin-top: 5px;
+  }
+}

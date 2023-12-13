@@ -1,0 +1,23 @@
+.elementor-accordion {
+  .elementor-accordion-item {
+    .elementor-tab-title {
+      font-weight: 500;
+    }
+  }
+}
+
+.elementor-widget-container {
+  .widget-title {
+    font-size: 1.2rem;
+    color: $gray-100;
+  }
+}
+
+.popular-questions-container {
+  background-color: $white-100;
+  padding: 30px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

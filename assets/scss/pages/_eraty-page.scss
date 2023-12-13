@@ -1,0 +1,152 @@
+.eraty-page {
+  padding: 70px 0;
+  margin: 0 auto;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .elementor-widget-wrap {
+    padding-top: 0 !important;
+  }
+
+  .elementor-widget-sidebar {
+    width: 400px !important;
+  }
+}
+
+.heading-primary {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: white;
+  border-radius: 40px;
+  padding: 1.5rem;
+
+  &--line-red {
+    color: red;
+  }
+}
+
+.heading-secondary {
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  background-color: white;
+  border-radius: 40px;
+  padding: 1.5rem;
+}
+
+.heading-tertiary {
+  margin-bottom: 3rem;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__card-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px !important;
+
+  &__card-wrapper {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 150px;
+  }
+}
+
+.instruction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__step {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__step-number {
+    border: 3px solid red;
+    display: flex;
+    min-width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.section-header {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-advantages,
+.section-instruction,
+.section-contact {
+  margin-bottom: 3rem;
+}
+
+.section-benefits {
+  background-color: #f9f9f9;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+  border-radius: 60px;
+}
+
+.contact {
+  display: flex;
+  gap: 3rem;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.informations {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer {
+  &__link {
+    margin-right: 2rem;
+  }
+}
