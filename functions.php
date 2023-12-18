@@ -117,7 +117,7 @@ function add_text_below_product_title()
       ";
     }
 }
-add_action('woocommerce_single_product_summary', 'add_text_below_product_title', 10);
+add_action('woocommerce_single_product_summary', 'add_text_below_product_title', 20);
 
 function render_contact_links()
 {
@@ -187,14 +187,19 @@ function add_pattern_book_button()
 {
   global $product;
 
-  $pattern_icon = get_theme_file_uri('./assets/icons/pattern-2.svg');
+  $product_id = $product -> get_id();
+  $is_pattern_book_to_hide = get_field('hide_pattern_book_button', $product_id);
 
-  echo "
-    <a class=\"single-product__pattern-book-button\" href=\"http://localhost:8888/meble-potocki-furnob/produkt/wzorniki/?v=9b7d173b068d\">
-      <img src=\"${pattern_icon}\"></img>
-    Zamów wzornik tkanin
-    </a>
+  if (!$is_pattern_book_to_hide) {
+    $pattern_icon = get_theme_file_uri('./assets/icons/pattern-2.svg');
+
+    echo "
+      <a class=\"single-product__pattern-book-button\" href=\"http://localhost:8888/meble-potocki-furnob/produkt/wzorniki/\">
+        <img src=\"${pattern_icon}\"></img>
+      Zamów wzornik tkanin
+      </a>
     ";
+  }
 }
 add_action('woocommerce_before_add_to_cart_button', 'add_pattern_book_button');
 

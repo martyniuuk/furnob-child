@@ -19,3 +19,17 @@
     }
   }
 }
+
+.site-header
+  .site-nav.large
+  .menu
+  > li.mega-menu
+  > .sub-menu
+  > li.menu-item-has-children
+  > a {
+  // color: #7b5a30;
+  color: #a9927d;
+  border-bottom: 1.5px solid #dddddd;
+  font-weight: 600;
+  text-transform: uppercase;
+}
