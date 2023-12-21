@@ -284,5 +284,24 @@ add_filter('wpcf7_autop_or_not', '__return_false');
 
 add_filter( 'get_the_archive_title_prefix', '__return_empty_string' );
 
-?>
+function custom_exclude_urls_from_sitemap( $url ) {
+    $excluded_urls = [
+        'https://meblepotocki.pl/kolekcje-polonia/',
+        'https://meblepotocki.pl/produkt/sofa-wloska-sycylia-140-kopia/',
+        'https://meblepotocki.pl/kolekcje/',
+        'https://meblepotocki.pl/sklep/',
+        'https://meblepotocki.pl/koszyk/',
+        'https://meblepotocki.pl/zamowienie/',
+        'https://meblepotocki.pl/moje-konto/'
+    ];
 
+    foreach ( $excluded_urls as $excluded_url ) {
+        if ( trailingslashit( $url ) === trailingslashit( $excluded_url ) ) {
+            return false;
+        }
+    }
+    return $url;
+}
+add_filter( 'rank_math/sitemap/entry', 'custom_exclude_urls_from_sitemap' );
+
+?>
